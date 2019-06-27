@@ -1,0 +1,118 @@
+.personal-ad {
+  width: 100%;
+  height: 320px;
+  margin-top: 75px;
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  background-image: url("https://community-home-assistant-assets.s3.dualstack.us-west-2.amazonaws.com/original/3X/d/e/dea8c60d19e758c8744437e7b91b73c10ad0e030.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  text-align: center;
+}
+
+.personal-ad .personal-ad-content {
+  position: absolute;
+  top: 50%;
+  left: 2.5%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+}
+
+.personal-ad .personal-ad-content .my-picture {
+  width: 300px;
+  height: 280px;
+  background: url("http://jirisrytr.eu/files/assets/srytr.jpeg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.75);
+}
+
+.personal-ad .personal-ad-content .my-info {
+  margin-left: 25px;
+  color: #ffffff;
+}
+
+.personal-ad .personal-ad-content .my-info h1 {
+  font-weight: 600;
+}
+
+.personal-ad .personal-ad-content .my-info h2 {
+  font-weight: 500;
+}
+
+.personal-ad .personal-ad-content .my-info p {
+  position: absolute;
+  bottom: 0;
+  font-size: 25px;
+}
+
+.personal-ad .personal-ad-content .my-info p i {
+  cursor: pointer;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.personal-ad .personal-ad-content .my-info p i:nth-child(1) {
+  margin-left: 0;
+}
+
+.personal-ad .personal-ad-btn {
+  position: absolute;
+  bottom: 5%;
+  right: 2.5%;
+  color: #ffffff;
+  font-weight: 700;
+  padding: 9px 18px;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  -webkit-transition: 150ms all ease-in-out;
+  transition: 150ms all ease-in-out;
+}
+
+.personal-ad .personal-ad-btn:hover {
+  -webkit-box-shadow: 0px 3px 18px rgba(255, 255, 255, 0.275);
+          box-shadow: 0px 3px 18px rgba(255, 255, 255, 0.275);
+  background: #ffffff;
+  color: #000000;
+}
+
+@media (max-width: 768px) {
+  .personal-ad {
+    height: auto;
+    padding: 25px 0;
+  }
+  .personal-ad .personal-ad-content {
+    text-align: center;
+    position: relative;
+    top: 0;
+    left: 0%;
+    -webkit-transform: none;
+            transform: none;
+    display: block;
+  }
+  .personal-ad .personal-ad-content .my-picture {
+    width: 50%;
+    height: 150px;
+    margin: 0 auto;
+  }
+  .personal-ad .personal-ad-content .my-info {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+  .personal-ad .personal-ad-content .my-info p {
+    position: relative;
+    margin-bottom: 25px;
+  }
+  .personal-ad .personal-ad-btn {
+    position: relative;
+    bottom: 0;
+    right: 0;
+  }
+}
+/*# sourceMappingURL=personal-ad.css.map */

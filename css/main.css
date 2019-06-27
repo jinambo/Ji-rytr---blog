@@ -1,0 +1,364 @@
+.navbar {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: #24252a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar .navbar-logo {
+  width: 50%;
+}
+
+.navbar .navbar-logo a {
+  color: #fff;
+}
+
+.navbar .navbar-logo h1 {
+  padding-left: 35px;
+  display: inline-block;
+  background: #24252a;
+  position: relative;
+  z-index: 999;
+}
+
+.navbar .navbar-logo small {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.navbar .navbar-logo .my-profession {
+  display: inline-block;
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 5px;
+  -webkit-animation: slide-left linear infinite 7s;
+          animation: slide-left linear infinite 7s;
+}
+
+.navbar .navbar-info {
+  width: 50%;
+  text-align: right;
+  padding-right: 35px;
+}
+
+.navbar .navbar-info i {
+  cursor: pointer;
+  color: #fff;
+  font-size: 20px;
+  margin: 10px 5px;
+}
+
+.main {
+  width: 100%;
+}
+
+.main .header {
+  position: relative;
+  width: 100%;
+  height: 85vh;
+  color: #fff;
+  -webkit-animation: headerZoom 50s linear infinite;
+          animation: headerZoom 50s linear infinite;
+  overflow: hidden;
+}
+
+.main .header .header-layer {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+}
+
+.main .header .header-logo {
+  position: relative;
+  padding-top: 35px;
+}
+
+.main .header .header-logo h1 {
+  font-size: 75px;
+  letter-spacing: 25px;
+}
+
+.main .header .header-navbar {
+  position: relative;
+  padding-top: 15px;
+}
+
+.main .header .header-navbar a {
+  color: #dbdbdb;
+  font-size: 25px;
+  margin: 0 25px;
+  position: relative;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  padding: 8px 0;
+}
+
+.main .header .header-navbar a:before, .main .header .header-navbar a:after {
+  content: "";
+  position: absolute;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+  pointer-events: none;
+}
+
+.main .header .header-navbar a:hover {
+  color: #fff;
+}
+
+.main .header .big-new {
+  cursor: pointer;
+  padding-top: 170px;
+  width: 60%;
+  margin: 0 auto;
+  position: relative;
+  -webkit-animation: fade-in-fwd 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in-fwd 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+.main .header .big-new .big-new-line {
+  width: 40px;
+  height: 1px;
+  background: #ebebeb;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+
+.main .header .big-new h3 {
+  font-size: 15px;
+  font-weight: 300;
+  color: #ebebeb;
+}
+
+.main .header .big-new h1 {
+  font-size: 5em;
+  font-weight: 500;
+  padding-top: 20px;
+}
+
+@media (max-width: 1280px) {
+  .main .header .big-new {
+    padding-top: 90px;
+  }
+  .main .header .big-new h1 {
+    font-size: 3em;
+  }
+}
+
+.main .featured-news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .featured-news .featured-new {
+  cursor: pointer;
+  position: relative;
+  width: 33%;
+  height: auto;
+  background: transparent;
+  margin-right: 12px;
+  margin-left: 12px;
+}
+
+.main .featured-news .featured-new:nth-child(1) {
+  margin-left: 0;
+}
+
+.main .featured-news .featured-new:nth-last-child(1) {
+  margin-right: 0;
+}
+
+.main .featured-news .featured-new .featured-new-picture {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  -webkit-box-shadow: 0px 3px 35px rgba(0, 0, 0, 0.55);
+          box-shadow: 0px 3px 35px rgba(0, 0, 0, 0.55);
+  -webkit-transition: 100ms all ease-in-out;
+  transition: 100ms all ease-in-out;
+}
+
+@media (max-width: 1280px) {
+  .main .featured-news .featured-new .featured-new-picture {
+    height: 220px;
+  }
+}
+
+.main .featured-news .featured-new h3 {
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+.main .featured-news .featured-new h1 {
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.main .featured-news .featured-new:hover .featured-new-picture {
+  -webkit-transform: scale(1.015);
+          transform: scale(1.015);
+  -webkit-box-shadow: 0px 3px 35px rgba(0, 0, 0, 0.65);
+          box-shadow: 0px 3px 35px rgba(0, 0, 0, 0.65);
+}
+
+@media (max-width: 1280px) {
+  .main .featured-news .featured-new h1 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main .featured-news {
+    display: block;
+  }
+  .main .featured-news .featured-new {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@-webkit-keyframes headerZoom {
+  0% {
+    background-size: 100% auto;
+  }
+  50% {
+    background-size: 120% auto;
+  }
+  100% {
+    background-size: 100% auto;
+  }
+}
+
+@keyframes headerZoom {
+  0% {
+    background-size: 100% auto;
+  }
+  50% {
+    background-size: 120% auto;
+  }
+  100% {
+    background-size: 100% auto;
+  }
+}
+
+.featured-news-container {
+  -webkit-animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fade-in-fwd {
+  0% {
+    -webkit-transform: translateZ(-80px);
+    transform: translateZ(-80px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-fwd {
+  0% {
+    -webkit-transform: translateZ(-80px);
+    transform: translateZ(-80px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slide-left {
+  0% {
+    left: 0;
+  }
+  25% {
+    left: 220px;
+  }
+  50% {
+    left: 220px;
+  }
+  75% {
+    left: 0;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    left: 0;
+  }
+  25% {
+    left: 220px;
+  }
+  50% {
+    left: 220px;
+  }
+  75% {
+    left: 0;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+/* Navbar hover effect */
+.hover-effect a:before, .hover-effect a:after {
+  height: 2px;
+  width: 0%;
+  background: #fff;
+}
+
+.hover-effect a:before {
+  top: 0;
+  left: 0;
+}
+
+.hover-effect a:after {
+  bottom: 0;
+  right: 0;
+}
+
+.hover-effect a:hover:before, .hover-effect a:hover:after {
+  width: 100%;
+}
+/*# sourceMappingURL=main.css.map */
