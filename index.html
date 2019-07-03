@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>blog</title>
+    <title>Jiří Šrytr | BLOG</title>
 
     <!-- STYLE SHEETS-->
     <link rel="stylesheet" href="css/root.css">
@@ -46,12 +46,23 @@
                 <div class="header-logo">
                     <h1>JIŘÍ ŠRYTR</h1>
                 </div>
+
+                <div onclick="dropNavbar()" class="open-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+
                 <div class="header-navbar hover-effect">
-                    <a class="" href="#">WEBDESIGN</a>
-                    <a class="" href="#">PROGRAMOVÁNÍ</a>
-                    <a class="" href="#">UX/UI</a>
-                    <a class="" href="#">HARDWARE</a>
-                    <a class="" href="#">OSTATNÍ</a>
+                    <div class="header-navbar-content">
+                        <a onclick="selectElement('webdesign')" class="webdesign" href="#">WEBDESIGN</a>
+                        <a onclick="selectElement('programovani')" class="programovani" href="#">PROGRAMOVÁNÍ</a>
+                        <a onclick="selectElement('ux-ui')" class="ux-ui" href="#">UX/UI</a>
+                        <a onclick="selectElement('hardware')" class="hardware" href="#">HARDWARE</a>
+                        <a onclick="selectElement('ostatni')" class="ostatni" href="#">OSTATNÍ</a>
+
+                        <div onclick="closeNavbar()" class="navbar-close"> 
+                            <i class="fas fa-angle-up"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -68,17 +79,19 @@
             <p style="margin-bottom: 10px;">Zvýrazněné články</p>
 
             <div class="featured-news">
-                <div class="featured-new">
-                    <div class="featured-new-picture" style="background: url('https://pbs.twimg.com/media/D7mc9rqWsAEeFT8.jpg'); background-position: center; background-size: cover;"></div>
-                        <h3>WEBDESIGN</h3>
-                        <h1>Kódování webů v roce 2019, aneb jaké změny přišly.</h1>
+                <div class="featured-new featured-new-ostatni">
+                    <a href="clanky/clanek-hackathon.html">
+                        <div class="featured-new-picture" style="background: url('https://spselitdobruska.cz/wp-content/gallery/20190402-hackathon/Hackathot-07.jpg'); background-position: center; background-size: cover;"></div>
+                        <h3>OSTATNÍ</h3>
+                        <h1>Hackathon - vytvořili jsme výherní aplikaci</h1>
+                    </a>
                 </div>
-                <div class="featured-new">
+                <div class="featured-new featured-new-ux-ui">
                     <div class="featured-new-picture" style="background: url('https://cdn.mos.cms.futurecdn.net/wH5y2PkWhCxqKBje8rBp5e.jpg'); background-position: center; background-size: cover;"></div>
                     <h3>UI/UX</h3>
                     <h1>Jak vybrat vhodný software pro návrh UI?</h1>
                 </div>
-                <div class="featured-new">
+                <div class="featured-new featured-new-hardware">
                     <div class="featured-new-picture" style="background: url('https://cnet2.cbsistatic.com/img/BgPq3r-vkTc2TKDVCcVmoGT-V80=/868x488/2017/06/21/f7b9d886-a558-4fe2-87b2-6dded4e71411/apple-macbook-12-inch-2017-05.jpg'); background-position: center; background-size: cover;"></div>
                     <h3>HARDWARE</h3>
                     <h1>Je MacBook 12" vhodný pro práci front-end vývojáře?</h1>
@@ -109,42 +122,44 @@
 
     <!-- MOST RECENT NEWS -->
     <div class="container">
-        <div class="recent-news">
+        <div class="recent-news recent-new-ostatni">
 
             <div class="recent-new">
-                <div class="recent-new-picture" style="background: url(https://icdn3.digitaltrends.com/image/poster-for-5717960237001-720x720.jpg); background-size: cover; background-position: center;"></div>
+                <a href="clanky/clanek-hackathon.html">
+                <div class="recent-new-picture" style="background: url(https://spselitdobruska.cz/wp-content/gallery/20190402-hackathon/Hackathot-07.jpg); background-size: cover; background-position: center;"></div>
                 <div class="recent-new-info">
-                    <div class="recent-new-category hardware">
-                        <h3>HARDWARE</h3>
+                    <div class="recent-new-category ostatni">
+                        <h3>OSTATNÍ</h3>
                     </div>
-                    <h1>Ultrawide monitor na práci?</h1>
-                    <p>Už měsíc pracuji s 34" velikým ultrawide monitorem za pár korun. Jak mi to jde?</p>
+                    <h1>Hackathon - vytvořili jsme výherní aplikaci</h1>
+                    <p>Na letošním Hackathonu Královehradeckého kraje jsme ve dvoučlenném týmu vytvořili výherní aplikaci.</p>
                 </div>
+                </a>
             </div>
 
-            <div class="recent-new">
+            <div class="recent-new recent-new-hardware">
                 <div class="recent-new-picture" style="background: url(https://assets.pcmag.com/media/images/620010-meet-the-overpowered-gaming-desktop-dtw3.jpg?thumb=y&width=980&height=456); background-size: cover; background-position: center;"></div>
                 <div class="recent-new-info">
                     <div class="recent-new-category hardware">
                         <h3>HARDWARE</h3>
                     </div>
-                    <h1>Herní mašina na programování.</h1>
+                    <h1>Herní mašina na programování</h1>
                     <p>Na programování webovek sice nepotřebujete výkonnou grafickou kartu, ale..</p>
                 </div>
             </div>
 
-            <div class="recent-new">
+            <div class="recent-new recent-new-hardware">
                 <div class="recent-new-picture" style="background: url(https://techcrunch.com/wp-content/uploads/2019/06/Raspberry-Pi-4-1.jpg); background-size: cover; background-position: center;"></div>
                 <div class="recent-new-info">
                     <div class="recent-new-category hardware">
                         <h3>HARDWARE</h3>
                     </div>
-                    <h1>Nový Raspberry Pi 4 je tu.</h1>
+                    <h1>Nový Raspberry Pi 4 je tu</h1>
                     <p>Hurá, konečně jsem se dočkali nového stroje Raspberry, který opět nabídne skvělé věci.</p>
                 </div>
             </div>
 
-            <div class="recent-new">
+            <div class="recent-new recent-new-programovani">
                 <div class="recent-new-picture" style="background: url(https://neunapp.com/media/blog/vuejs-logo.jpg); background-size: cover; background-position: center;"></div>
                 <div class="recent-new-info">
                     <div class="recent-new-category programovani">
@@ -158,12 +173,20 @@
         </div>
 
         <div class="load-more">
-            <a href="#">Načíst další..</a>
+            <p>Načíst další..</p>
         </div>
+    </div>
 
+    <!-- Footer -->
+    <div class="footer">
+        <p>Jiří Šrytr - BLOG | 2019</p>
+        <p>Coded and Designed with <b>❤</b> by <a href="#">Jiří Šrytr</a></p>
     </div>
 
 <!-- SCRIPTS -->
+<script src="scripts/navbar.js"></script>
 <script src="scripts/main.js"></script>
+<script src="scripts/effect.js"></script>
+<script src="scripts/load.js"></script>
 </body>
 </html>

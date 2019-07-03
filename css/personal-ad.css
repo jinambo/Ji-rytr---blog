@@ -56,10 +56,34 @@
   cursor: pointer;
   margin-left: 2px;
   margin-right: 2px;
+  -webkit-transition: 200ms all ease-in-out;
+  transition: 200ms all ease-in-out;
 }
 
 .personal-ad .personal-ad-content .my-info p i:nth-child(1) {
   margin-left: 0;
+}
+
+.personal-ad .personal-ad-content .my-info p .fa-twitter:hover {
+  color: #1dcaff;
+}
+
+.personal-ad .personal-ad-content .my-info p .fa-facebook-square:hover {
+  color: #3B5998;
+}
+
+.personal-ad .personal-ad-content .my-info p .fa-codepen:hover {
+  color: #2F3640;
+}
+
+.personal-ad .personal-ad-content .my-info p .fa-linkedin:hover {
+  color: #0077B5;
+}
+
+.personal-ad .personal-ad-content .my-info p .fa-instagram:hover {
+  background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .personal-ad .personal-ad-btn {
@@ -82,10 +106,17 @@
   color: #000000;
 }
 
+@media (max-width: 600px) {
+  .personal-ad .personal-ad-content .my-picture {
+    height: 200px !important;
+  }
+}
+
 @media (max-width: 768px) {
   .personal-ad {
     height: auto;
-    padding: 25px 0;
+    padding-top: 20px;
+    padding-bottom: 30px;
   }
   .personal-ad .personal-ad-content {
     text-align: center;
@@ -98,7 +129,7 @@
   }
   .personal-ad .personal-ad-content .my-picture {
     width: 50%;
-    height: 150px;
+    height: 300px;
     margin: 0 auto;
   }
   .personal-ad .personal-ad-content .my-info {
@@ -108,6 +139,7 @@
   .personal-ad .personal-ad-content .my-info p {
     position: relative;
     margin-bottom: 25px;
+    margin-top: 10px;
   }
   .personal-ad .personal-ad-btn {
     position: relative;

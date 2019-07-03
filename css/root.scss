@@ -22,6 +22,11 @@ body {
         position: relative;
         font-weight: 600;
         font-size: 22px;
+        @media (max-width: 768px) {
+            margin-bottom: -20px !important; 
+            margin-top: 30px !important;
+            color: rgb(27, 25, 25);
+        }
     }
 }
 

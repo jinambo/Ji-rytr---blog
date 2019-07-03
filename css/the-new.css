@@ -1,0 +1,114 @@
+.header {
+  height: auto !important;
+  padding-bottom: 0px !important;
+}
+
+.big-new {
+  width: 72.5% !important;
+}
+
+.big-new h1 {
+  font-size: 3em !important;
+  padding-bottom: 115px !important;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 95% !important;
+  }
+}
+
+.the-new {
+  background: #ffffff;
+  -webkit-box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.5);
+  z-index: 99;
+  position: relative;
+  -webkit-animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.the-new .category-color-line {
+  width: 100%;
+  height: 6px;
+}
+
+.the-new .line-ostatni {
+  background: #0984e3;
+  -webkit-box-shadow: 0px 6px 35px rgba(9, 132, 227, 0.85);
+          box-shadow: 0px 6px 35px rgba(9, 132, 227, 0.85);
+}
+
+.the-new .the-new-content {
+  padding: 40px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.the-new .the-new-content .inside-content {
+  margin-right: 10px;
+  width: 75%;
+}
+
+.the-new .the-new-content .inside-content p {
+  color: #000000;
+  font-weight: 400;
+}
+
+.the-new .the-new-content .inside-content img {
+  -webkit-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 3px 20px rgba(0, 0, 0, 0.15);
+  margin: 20px 0;
+}
+
+.the-new .the-new-content .inside-info {
+  margin-left: 10px;
+  width: 25%;
+  text-align: right;
+}
+
+.the-new .the-new-content .inside-info a {
+  display: block;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .the-new .the-new-content {
+    display: block;
+    padding: 5px 20px;
+  }
+  .the-new .the-new-content .inside-content {
+    width: 100%;
+  }
+  .the-new .the-new-content .inside-info {
+    width: 25%;
+  }
+}
+
+@-webkit-keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=the-new.css.map */

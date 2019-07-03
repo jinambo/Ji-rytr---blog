@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jiří Šrytr | BLOG</title>
+
+    <!-- STYLE SHEETS-->
+    <link rel="stylesheet" href="../css/root.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/the-new.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+</head>
+<body>
+
+    <!-- FACEBOOK' COMMENTS PLUGIN-->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/cs_CZ/sdk.js#xfbml=1&version=v3.3"></script>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <div class="navbar-logo">
+            <a href="#">
+                <h1>JIŘÍ ŠRYTR</h1>
+                <div class="my-profession">
+                    <small>| webový vývojář a designér</small>
+                </div>
+            </a>
+        </div>
+        <div class="navbar-info">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-codepen"></i>
+            <i class="fab fa-linkedin"></i>
+        </div>
+    </div>
+
+    <!-- MAIN SECTION -->
+    <div class="main">
+
+        <!-- HEADER SECTION WITH MOST IMPORTANT NEW INSIDE -->
+        <div class="header" style="background: url('https://c4.wallpaperflare.com/wallpaper/246/462/453/laptop-macbook-iphone-apple-wallpaper-89f0a85d31dabd5b86b748cf4061464d.jpg'); text-align: center;">
+            <div class="header-layer"></div>
+            <div class="header-controller">
+                <div class="header-logo">
+                    <h1>JIŘÍ ŠRYTR</h1>
+                </div>
+
+                <div onclick="dropNavbar()" class="open-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+
+                <div class="header-navbar hover-effect">
+                    <div class="header-navbar-content">
+                        <a onclick="selectElement('webdesign')" class="webdesign" href="#">WEBDESIGN</a>
+                        <a onclick="selectElement('programovani')" class="programovani" href="#">PROGRAMOVÁNÍ</a>
+                        <a onclick="selectElement('ux-ui')" class="ux-ui" href="#">UX/UI</a>
+                        <a onclick="selectElement('hardware')" class="hardware" href="#">HARDWARE</a>
+                        <a onclick="selectElement('ostatni')" class="ostatni" href="#">OSTATNÍ</a>
+
+                        <div onclick="closeNavbar()" class="navbar-close"> 
+                            <i class="fas fa-angle-up"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="big-new">
+                <h3 class="big-new-category">OSTATNÍ</h3>
+                <div class="big-new-line"></div>
+                <h1 class="big-new-title">Hackathon - vytvořili jsme výherní aplikaci.</h1>
+            </div>
+
+        </div>
+
+
+        <!-- CONTAINER WITH THE NEW'S CONTENT -->
+        <div class="the-new container" style="margin-top: -95px;">
+            <div class="category-color-line line-ostatni"></div>
+            <div class="the-new-content">
+               <div class="inside-content">
+                    <p>Dne 21. 3. jsme se zúčastnili soutěže Hackathon Královehradeckého kraje 2019, na Fakultě informatiky a managementu Univerzity Hradec Králové, která probíhala celý den. Cílem této soutěže bylo ve 2 až 4 členném týmu vytvořit webovou aplikaci, která by mohla být užitečná pro kraj i veřejnost a to s použitím otevřených dat Královehradeckého kraje.</p>
+                    <br>
+                    <p>Za naši školu jsme vyjeli ve dvoučlenném týmu – Jiří Šrytr a Matyáš Teplý jako studenti oboru Aplikační software a multimédia. Umístili jsme se na prvním místě s webovou aplikací, pomocí které si uživatel může najít praktického lékaře či zubaře, a vyhráli tak 20 000 Kč.</p>
+                    <br>
+                    <img src="https://spselitdobruska.cz/wp-content/gallery/20190402-hackathon/Hackathon-03.jpg" alt="" width="100%">
+                    <p>Zápis týmu probíhal od 8.00 do 8.30, potom následovala krátká prezentace o otevřených datech a představení poroty a mentorů. Od 9.00 začalo samotné navrhování, přemýšlení a samozřejmě programování. Ve 12.00 na nás čekal pestrý oběd, mohli jsme si totiž vybrat z mnoha jídel. Po obědě jsme opět pokračovali v naší práci až do 16.30, kdy probíhala prezentace aplikací porotě a dalším účastníkům soutěže. Nakonec jsme se sešli v posluchárně, ve které jsme se dozvěděli o rozhodnutí poroty.</p>
+                    <br>
+                    <p>Zdrojové kódy našich prací byly zveřejněny na github účtu Královehradeckého kraje, jedná se tedy o open source.</p>
+                    <br>
+                    <p>Soutěž byla uspořádána velice pěkně a určitě jsme získali spoustu nových zkušeností. Děkujeme Královehradeckému kraji za poskytnutí této příležitosti.</p>
+               </div>
+               <div class="inside-info">
+                   <a href="#">Sdílej na Facebooku</a>
+                   <a href="#">Sdílej na Twitteru</a>
+                   <br>
+                   <small>Reklama:</small>
+                   <img src="https://justmythinking.com/wp-content/uploads/2015/06/amazon-long-vertical.gif" alt="" width="100%">
+               </div>
+            </div>
+
+            <div class="fb-comments" data-href="127.0.0.1" data-width="100%" data-numposts="5"></div>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>Jiří Šrytr - BLOG | 2019</p>
+        <p>Coded and Designed with <b>❤</b> by <a href="#">Jiří Šrytr</a></p>
+    </div>
+
+<!-- SCRIPTS -->
+<script src="../scripts/navbar.js"></script>
+<script src="../scripts/main.js"></script>
