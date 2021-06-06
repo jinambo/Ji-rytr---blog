@@ -1,1 +1,1 @@
-My CSS template for blog.
+Template for my blog.
